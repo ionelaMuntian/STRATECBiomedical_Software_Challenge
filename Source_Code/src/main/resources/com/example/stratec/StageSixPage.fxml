@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.CubicCurve?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="507.0" prefWidth="900.0" style="-fx-background-color: #0D1B2A;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.stratec.StageSixController">
+   <children>
+      <CubicCurve controlX1="-35.60618591308594" controlX2="628.0" controlY1="-106.00613403320312" controlY2="30.400009155273438" endX="724.0000610351562" endY="-56.000003814697266" fill="#efef93" layoutX="176.0" layoutY="56.0" startX="-161.60000610351562" startY="-24.800006866455078" stroke="BLACK" />
+      <CubicCurve controlX1="-21.20001220703125" controlX2="495.800048828125" controlY1="90.0" controlY2="-59.79998779296875" endX="738.0" endY="26.79998779296875" fill="#efef93" layoutX="162.0" layoutY="474.0" startX="-150.0" stroke="BLACK" />
+      <Text fill="#efef93" layoutX="204.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stage Six – Rocket science is really hard" wrappingWidth="570.9368133544922">
+         <font>
+            <Font name="Goudy Old Style" size="35.0" />
+         </font>
+      </Text>
+      <Button fx:id="nextButton" layoutX="751.0" layoutY="450.0" mnemonicParsing="false" onAction="#nextButtonOnAction" prefHeight="53.0" prefWidth="149.0" style="-fx-background-color: #efef93;" text="Next" textFill="#000000bf">
+         <font>
+            <Font name="Bookman Old Style Bold" size="27.0" />
+         </font>
+      </Button>
+      <Text fill="#efef93" layoutX="42.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Starting Planet:" wrappingWidth="238.9368133544922">
+         <font>
+            <Font name="Goudy Old Style" size="25.0" />
+         </font>
+      </Text>
+      <Text fill="#efef93" layoutX="42.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Destionation Planet:" wrappingWidth="238.9368133544922">
+         <font>
+            <Font name="Goudy Old Style" size="25.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="startPlanetOption" layoutX="259.0" layoutY="126.0" prefWidth="150.0" promptText="Select" />
+      <ComboBox fx:id="destPlanetOption" layoutX="259.0" layoutY="161.0" prefWidth="150.0" promptText="Select" />
+      <Button fx:id="computeButton" layoutX="456.0" layoutY="139.0" mnemonicParsing="false" onAction="#computeButtonOnAction" prefHeight="33.0" prefWidth="150.0" style="-fx-background-color: #efef93;" text="Compute">
+         <font>
+            <Font name="Bookman Old Style Bold" size="20.0" />
+         </font>
+      </Button>
+      <ScrollPane fx:id="scrollPane" layoutX="43.0" layoutY="200.0" prefHeight="239.0" prefWidth="826.0">
+        <content>
+          <AnchorPane fx:id="anchorPane" minHeight="0.0" minWidth="0.0" prefHeight="465.0" prefWidth="829.0">
+               <children>
+                  <TextArea fx:id="textArea" layoutX="7.0" layoutY="4.0" prefHeight="457.0" prefWidth="806.0" />
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </children>
+</Pane>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.CubicCurve?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="507.0" prefWidth="900.0" style="-fx-background-color: #0D1B2A;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.stratec.StageTwoController">
+   <children>
+      <CubicCurve controlX1="-35.60618591308594" controlX2="628.0" controlY1="-106.00613403320312" controlY2="30.400009155273438" endX="724.0000610351562" endY="-56.000003814697266" fill="#efef93" layoutX="176.0" layoutY="56.0" startX="-161.60000610351562" startY="-24.800006866455078" stroke="BLACK" />
+      <CubicCurve controlX1="-21.20001220703125" controlX2="495.800048828125" controlY1="90.0" controlY2="-59.79998779296875" endX="738.0" endY="26.79998779296875" fill="#efef93" layoutX="162.0" layoutY="474.0" startX="-150.0" stroke="BLACK" />
+      <Text fill="#efef93" layoutX="236.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stage Two – Up, up and away!" wrappingWidth="570.9368133544922">
+         <font>
+            <Font name="Goudy Old Style" size="35.0" />
+         </font>
+      </Text>
+      <Button fx:id="nextButton" layoutX="751.0" layoutY="450.0" mnemonicParsing="false" onAction="#nextButtonOnAction" prefHeight="53.0" prefWidth="149.0" style="-fx-background-color: #efef93;" text="Next">
+         <font>
+            <Font name="Bookman Old Style Bold" size="27.0" />
+         </font>
+      </Button>
+      <ScrollPane layoutX="42.0" layoutY="149.0" prefHeight="147.0" prefWidth="832.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="619.0" prefWidth="832.0">
+               <children>
+                  <TextFlow fx:id="textFlow" layoutX="3.0" layoutY="5.0" prefHeight="128.0" prefWidth="813.0" />
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <Text fill="#efef93" layoutX="52.0" layoutY="133.0" strokeType="OUTSIDE" strokeWidth="0.0" text="✅ Computing escape time and distance for all planets 🚀" wrappingWidth="623.7368621826172">
+         <font>
+            <Font name="Goudy Old Style" size="21.0" />
+         </font>
+      </Text>
+      <ScrollPane layoutX="42.0" layoutY="333.0" prefHeight="117.0" prefWidth="832.0">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="327.0" prefWidth="835.0">
+               <children>
+                  <TextFlow fx:id="textFlow2" layoutX="4.0" layoutY="1.0" prefHeight="105.0" prefWidth="818.0" />
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <Text fill="#efef93" layoutX="42.0" layoutY="322.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The computations were based on the following formulas:" wrappingWidth="623.7368621826172">
+         <font>
+            <Font name="Goudy Old Style" size="21.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>

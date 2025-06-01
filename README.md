@@ -1,4 +1,4 @@
-# 🚀 STRATEC Biomedical – 2025 Internship Software Challenge
+# 🚀 STRATEC Biomedical – 2025 Software Challenge
 
 **Implemented by:** Mariana-Ionela Muntian  
 **📺 Video Demo:** [Watch the demo](https://drive.google.com/drive/folders/1S7ttVkd4Mug45trtaZwTTki46qhwfCEH)
